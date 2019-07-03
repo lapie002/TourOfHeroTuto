@@ -4,5 +4,18 @@
     {{ title }}
   </h1>
 </div>
-<app-heroes></app-heroes>
+
+<nav>
+  <!--  http://localhost:4200/dashboard -->
+  <a routerLink="/dashboard">Dashboard</a>
+  <!--  http://localhost:4200/heroes -->
+  <a routerLink="/heroes">Heroes</a>
+
+  <!--  http://localhost:4200/detail/:id -->
+
+</nav>
+
+<!-- <app-heroes></app-heroes> -->
+
+<router-outlet></router-outlet>
 <app-messages></app-messages>
