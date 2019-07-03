@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+
+import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
 
 
@@ -9,11 +11,10 @@ import { HeroService } from '../hero.service';
 })
 export class HeroesComponent implements OnInit {
 
-  /*tableau de Hero - mock-heroes*/
-  heroes = hero[];
-
   /* var de type Hero */
   selectedHero: Hero;
+  /*tableau de Hero - mock-heroes*/
+  heroes: Hero[];
 
   constructor(private heroService: HeroService) {
   }
