@@ -8,7 +8,7 @@ docs](https://angular.io/tutorial).
 ```
 mkdir TourOfHeroTutotoh
 git clone https://github.com/lapie002/TourOfHeroTuto TourOfHeroTuto/
-cd toh
+cd TourOfHeroTutotoh
 npm install
 ```
 
