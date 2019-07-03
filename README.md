@@ -46,4 +46,4 @@ To get more help on the Angular CLI use `ng help` or go check out the
 README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 This project was generated with [Angular 
-CLI](https://github.com/angular/angular-cli) version 1.2.0.
+CLI](https://github.com/angular/angular-cli) version 8.1.0.
