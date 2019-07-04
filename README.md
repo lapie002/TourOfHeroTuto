@@ -5,7 +5,7 @@ docs](https://angular.io/tutorial).
 
 ## Get the Code
 ```
-mkdir TourOfHeroTutotoh
+mkdir TourOfHeroTuto
 git clone https://github.com/lapie002/TourOfHeroTuto TourOfHeroTuto/
 cd TourOfHeroTutotoh
 npm install
