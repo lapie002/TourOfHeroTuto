@@ -6,6 +6,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 
 import { Hero} from './hero';
 import { MessageService } from './message.service';
+import {augmentAppWithServiceWorker} from '@angular-devkit/build-angular/src/angular-cli-files/utilities/service-worker';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -43,6 +44,14 @@ export class HeroService {
       catchError(this.handleError<any>('updateHero'))
     );
   }
+
+  /** Post: add a new hero to the server */
+  addHero(hero: Hero): Observable<Hero>{
+    return this.http.post<Hero>(this.heroesUrl, hero, httpOptions).pipe(
+      tap((newHero: Hero) => this.log(`added hero with id=${newHero.id}`)),
+      catchError(this.handleError<Hero>('addHero'))
+    );
+}
 
 
   /** Log a HeroService message with the MessageService */
